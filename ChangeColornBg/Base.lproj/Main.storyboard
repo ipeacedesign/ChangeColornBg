@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChangeColornBg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="MB5-op-sPU">
+                                <rect key="frame" x="94" y="150" width="226" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shinBg" translatesAutoresizingMaskIntoConstraints="NO" id="9sX-1B-iax">
+                                <rect key="frame" x="0.0" y="419" width="414" height="477"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="9FB-m8-jlq"/>
+                                    <constraint firstAttribute="height" constant="477" id="VgF-mf-RR3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shin" translatesAutoresizingMaskIntoConstraints="NO" id="och-Bt-KaT">
+                                <rect key="frame" x="85.5" y="79" width="240" height="289"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="kTw-4G-En4"/>
+                                    <constraint firstAttribute="height" constant="289" id="w4U-Te-ovy"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="81m-Db-E61">
+                                <rect key="frame" x="78" y="513" width="258" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="thumbTintColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="XcQ-h8-7yO"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="g6m-r0-5h1">
+                                <rect key="frame" x="78" y="561" width="258" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="thumbTintColor" red="0.1912273709" green="1" blue="0.0036563891136985561" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="hsf-NC-C8E"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="coS-mX-dwF">
+                                <rect key="frame" x="78" y="614" width="258" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="thumbTintColor" red="0.0" green="0.0" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="LBr-cO-VWT"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a0G-DB-o8u">
+                                <rect key="frame" x="273" y="462" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ven-dd-F8H"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="套用花紋？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDR-K8-Paq">
+                                <rect key="frame" x="81" y="449" width="130" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TR4-sZ-Naj">
+                                <rect key="frame" x="78" y="666" width="258" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="C0L-Y9-aIX"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9sX-1B-iax" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JB7-Br-UkQ"/>
+                            <constraint firstItem="och-Bt-KaT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85.620000000000005" id="JKF-vW-9HH"/>
+                            <constraint firstAttribute="bottom" secondItem="9sX-1B-iax" secondAttribute="bottom" id="K7e-yA-E3P"/>
+                            <constraint firstItem="och-Bt-KaT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="UuW-LY-FdT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="och-Bt-KaT" secondAttribute="trailing" constant="88.379999999999995" id="YnZ-rM-7kX"/>
+                            <constraint firstItem="9sX-1B-iax" firstAttribute="top" secondItem="och-Bt-KaT" secondAttribute="bottom" constant="51" id="fvM-bz-Sjx"/>
+                            <constraint firstItem="9sX-1B-iax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mkV-09-HkK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="alphaSlider" destination="TR4-sZ-Naj" id="E38-WL-FzZ"/>
+                        <outlet property="blueSlider" destination="coS-mX-dwF" id="3gu-UX-rHn"/>
+                        <outlet property="greenSlider" destination="g6m-r0-5h1" id="V5O-DP-dj8"/>
+                        <outlet property="pattern" destination="a0G-DB-o8u" id="CAP-yC-XRM"/>
+                        <outlet property="patternImg" destination="MB5-op-sPU" id="0dq-r3-nn5"/>
+                        <outlet property="redSlider" destination="81m-Db-E61" id="pM6-CD-KOm"/>
+                        <outlet property="shinImg" destination="och-Bt-KaT" id="38a-0r-zRA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pattern" width="609" height="469"/>
+        <image name="shin" width="397" height="399"/>
+        <image name="shinBg" width="297" height="527"/>
+    </resources>
+</document>
